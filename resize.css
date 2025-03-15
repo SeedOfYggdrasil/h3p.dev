@@ -1,0 +1,71 @@
+@media screen and (min-width: 1200px) {
+    
+    .content img {
+        width: 250px;
+        height: auto;
+    }
+
+    .hero {
+        font-size: 32px;
+        width: 100%;
+    }
+    
+    #events h2 {
+        font-size: 32px;        
+    }
+
+   .flyers {
+        display: inline-block;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+}
+
+   .flyers img {
+        max-width: 400px;   
+        max-height: 300px;
+        height: auto;
+        width: 100%;
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 30px;
+         padding-bottom: 30px;
+        text-align: center;
+        width: 100%;
+        height: 50px;    
+    }
+
+    .footer p {
+       padding: 20px;
+       margin: 0 auto;
+    }
+
+    .footer .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 20px;
+        padding: 10px;
+     }
+}
+
+@media screen and (min-width: 2440px) {
+   .flyers {
+       gap: 40px;
+    }    
+
+   .flyers img {
+        max-width: 40%;
+    }
+}

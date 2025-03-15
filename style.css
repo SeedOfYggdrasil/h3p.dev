@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--primary-color: white;
+	--green: rgb(0, 252, 0);
+	--purple: rgba(255, 112, 175, 0.4);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000 url('img/bg.jpg') no-repeat center center/cover;
+    font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+    color: #fff;   
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+.header {    
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.content {
+	z-index: 2;
+}
+
+.content img {
+	max-width: 200px;
+    height: auto;
+	margin: 0 10px;
+}
+
+.hero {
+  left: 20px;
+  margin: 10px;
+  padding: 0;
+  color: #fff;
+  font-family: "Archivo Black","Archivo", sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-shadow: 0px 1px 3px #000, 0px -4px 2px rgb(3, 131, 146), 4px 2px 2px rgb(163, 0, 233), 2px 0px 1px #000, 1px 0px 1px #161616, -4px 2px 2px #00f234, 0px 0px 4px #fff, 0px 4px 10px #000;
+}
+
+.accent {
+  margin: 5px;
+  font-family: "Archivo Black","Archivo", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  text-shadow: 0px 1px 3px #fff, 1px 0px 1px #ebebeb, 0px 2px 1px #000, 0px -2px 1px #000, 0px 5px 5px #0091ff, 5px 0px 5px #ff0066, -5px 0px 5px #ff0000, 0px 2px 10px #fff;
+}
+
+.content .btn {
+    display: inline-block;
+	padding: 10px 30px;
+	background: var(--purple);
+	color: var(--green);
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+	border-radius: 2.5px;
+	border: solid magenta 2px;
+	margin-top: 25px;
+	opacity:1;
+	transition: all 0.3s ease;
+}
+
+.content .btn:hover {
+	transform: scale(0.95);
+	opacity: 1;
+}
+
+#events {
+	text-align: center;
+	padding: 40px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    paddin-bottom: 50px;
+}
+
+#events h2 {
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.flyers {
+    display: block;
+    align-items: center;    
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    paddinG: 10px;
+}
+
+.flyers img {
+    max-width: 400px;
+    max-height: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    height: 50px;   
+}
+
+.footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    font-weight: 200;
+    letter-spacing: 4px;
+ }
+
+.footer .social {
+    display: flex;
+    flex-direction: row; 
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.footer .social a {
+    dislay: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;	
+	color: #fff;
+}
+
