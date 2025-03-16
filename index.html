@@ -1,34 +1,46 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="description" content="The official website of Henchman 3 Productions, an electronic music promotional group and event coordinator based in Central Ohio.">
-<meta name="keywords" content="Ohio, DJ, Techno, EDM, House Music, Central Ohio, Shows, Gigs, Entertainment, Nightlife, Columbus, Canton, Toledo, Cleveland, Cincinnati, OH">
-<meta name="author" content="Alex Pariah">
-<title>Home | H3P</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="resize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="The official website of Henchman 3 Productions, an electronic music promotional group and event coordinator based in Central Ohio.">
+    <eta name="keywords" content="Ohio, DJ, Techno, EDM, House Music, Central Ohio, Shows, Gigs, Entertainment, Nightlife, Columbus, Canton, Toledo, Cleveland, Cincinnati, OH">
+    <meta name="author" content="Alex Pariah">
+    <title>Home | H3P</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resize.css">
 </head>
 <body>
+    <!-- Header Section -->
     <section id="header" class="header">
-             <div class="content">
-                <img src="img/logo.png"></img>
-                <p class="hero">HENCHMAN <span class="accent">3</span> PRODUCTIONS</p>
-                <a href="index.html#events" class="btn">VIEW SHOWS</a>
-             </div>
-    </section>
-    <section id="events" class="events">
-        <h2>EVENTS</h2>
-        <div class="flyers">
-            <img src="img/flyer1.jpg"></img>
-            <img src="img/flyer2.jpg"></img>
-            <img src="img/flyer3.jpg"></img>
+        <div class="hero">
+            <img src="img/logo.png"></img>
+            <p class="hero-text">HENCHMAN
+                <span class="hero-text-accent">3</span>
+            PRODUCTIONS</p>
+            <a href="index.html#events" class="btn">VIEW SHOWS</a>
         </div>
     </section>
-       
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <h2>UPCOMING SHOWS</h2>
+
+        <div class="flyers">
+            <img src="img/flyer1.jpg" data-src="img/flyer1.jpg" class="flyer"></img>
+            <img src="img/flyer2.jpg" data-src="img/flyer2.jpg" class="flyer"></img>
+            <img src="img/flyer3.jpg" data-src="img/flyer3.jpg" class="flyer"></img>
+        </div>
+
+        <!-- Modal -->
+        <div id="imageModal" class="modal">
+            <img class="modal-content" id="modalImage">
+        </div>
+
+    <!-- Footer Section -->
     <section id="footer" class="footer">
         <div class="social">
             <a href="index.html#" target="_blank"><i class="fab fa-tiktok fa-3x"></i></a>
@@ -37,5 +49,9 @@
         </div>
         <p>Copyright &copy; 2025 Henchman 3 Productions</p>
     </section>
+</section>
+    <!-- Scripts -->
+    <script src="imageModal.js"></script>
+
 </body>
 </html>
