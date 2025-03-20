@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             modalImg.src = img.dataset.src;
             modal.style.display = "flex";
             setTimeout(() => modal.classList.add("show"), 10);
-            history.pushState({ modalOpen: true }, ""); // Mobile back button support
+            history.pushState({ modalOpen: true }, "");
             disableBackgroundScroll();
             resetZoom();
         });
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
             enableBackgroundScroll();
         }, 300);
         resetZoom();
-        history.back(); // Handle mobile back button
+        history.back();
     }
 
     // Close modal when clicking outside image
@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Disable background scrolling while preserving scroll position
     function disableBackgroundScroll() {
         scrollY = window.scrollY;
+        background = body.style.background;
+        body.style.background = "#000";
         body.style.position = "fixed";
         body.style.top = `-${scrollY}px`;
         body.style.width = "100%";
@@ -64,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         body.style.overflow = "";
         html.style.overflow = "";
         window.scrollTo(0, scrollY);
+        body.style.background = background;
     }
 
     // Mouse wheel zoom (desktop)
