@@ -4,3 +4,4 @@
 .profile
 .scripts
 .scripts/*
+.userenv
